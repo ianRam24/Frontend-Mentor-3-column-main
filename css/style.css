@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 200px;
+    width: 300px;
+    height: 500px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.card img {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+
+.card p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    letter-spacing: .5px;
+    font-size: .9rem;
+    line-height: 2;
+}
+
+.card a {
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    align-self: start;
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.card a:hover {
+    outline: 1px solid hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+
+.card:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card:nth-child(1) a {
+    color: hsl(31, 77%, 52%);
+}
+
+.card:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(2) a {
+    color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card:nth-child(3) a {
+    color: hsl(179, 100%, 13%);
+}
+
+.card:nth-child(1) a:hover,
+.card:nth-child(2) a:hover,
+.card:nth-child(3) a:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.attribution a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    margin-left: 3px;
+
+}
+
+.attribution a:last-of-type {
+    cursor: default;
+}
+
+@media(max-width:968px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card:nth-child(1) {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .card:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .card:nth-child(3) {
+        margin-top: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0;
+    }
+}
